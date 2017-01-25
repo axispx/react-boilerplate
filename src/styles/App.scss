@@ -1,0 +1,68 @@
+// Globally scope the css elements with :global tag
+// Local scoping is default
+// Camel case should be used for the class names
+
+.siteWrapper {
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+
+  img {
+    width: 200px;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+  }
+
+  img:hover {
+    box-shadow: 0 10px 50px 0 rgba(0,0,0,0.4);
+    transform: scale(1.3);
+    transition: all 0.3s ease-in-out;
+  }
+}
+
+.title {
+  font-size: 3.5rem;
+  color: #D42152;
+};
+
+.links {
+  width: 400px;
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.5rem;
+
+  a {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: #2B83D2;
+  }
+
+  a:hover {
+    color: #2DC45E;
+  }
+}
+
+.exampleTitle {
+  font-size: 1.5rem;
+}
+
+.buttons {
+  width: 200px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.count {
+  font-size: 3rem;
+}
+
+@media only screen and (max-width: 500px) {
+  .title {
+    font-size: 2rem;
+  }
+}
