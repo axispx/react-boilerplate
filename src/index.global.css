@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css?family=Muli');
+@import 'normalize.css';
+
+body {
+  font-family: 'Muli', 'Helvetica Neue', 'Monaco', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:global{
+
+  .exampleContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .exampleTitle {
+    font-size: 1.5rem;
+  }
+}
