@@ -10,7 +10,7 @@ class Root extends Component {
     const {store, history} = this.props;
     return (
       <Provider store={store}>
-        <Router history={history} key={Math.random()} routes={routes}>
+        <Router history={history} routes={routes}>
         </Router>
       </Provider>
     );

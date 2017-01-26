@@ -1,8 +1,0 @@
-@import url('https://fonts.googleapis.com/css?family=Muli');
-@import 'normalize.css';
-
-body {
-  font-family: 'Muli', 'Helvetica Neue', 'Monaco', sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}

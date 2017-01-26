@@ -26,6 +26,8 @@
 
 * Hot Reloading
 * Redux
+* React Router
+* React Router Redux
 * CSS Modules
 * Image Assets Compression
 * Auto Prefixing

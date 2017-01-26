@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import * as actions from '../redux/actions.js';
 import {connect} from 'react-redux';
+import {Link} from 'react-router';
 
 import styles from '../styles/Counter';
 
@@ -15,8 +16,10 @@ class Counter extends Component {
 
   render() {
     return(
-      <div>
-        <div className={styles.exampleTitle}>Redux Counter Example</div>
+      <div className='exampleContainer'>
+        <Link to='/todo'>Goto Todo Example</Link>
+        <br/>
+        <div className='exampleTitle'>Redux Counter Example</div>
         <div className={styles.buttons}>
           <button onClick={this.decreaseCount.bind(this)}>-</button>
           <div className={styles.count}>{this.props.count}</div>
