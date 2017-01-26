@@ -28,7 +28,7 @@
 };
 
 .links {
-  width: 400px;
+  width: 100%;
   display: flex;
   justify-content: space-around;
   font-size: 1.5rem;
@@ -44,21 +44,6 @@
   a:hover {
     color: #2DC45E;
   }
-}
-
-.exampleTitle {
-  font-size: 1.5rem;
-}
-
-.buttons {
-  width: 200px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.count {
-  font-size: 3rem;
 }
 
 @media only screen and (max-width: 500px) {
