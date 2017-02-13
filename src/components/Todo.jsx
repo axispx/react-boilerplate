@@ -1,17 +1,18 @@
-import React, {Component} from 'react';
-import * as actions from '../redux/actions.js';
-import {connect} from 'react-redux';
-import {Link} from 'react-router';
+import React, { Component } from 'react'
+import { connect } from 'react-redux'
+import { Link } from 'react-router'
+import { bindActionCreators } from 'redux'
 
-import styles from '../styles/Todo';
+import * as actions from '../redux/actions.js'
+import styles from '../styles/Todo'
 
 class Todo extends Component {
   handleSubmit(e) {
     e.preventDefault();
-    const todo = this.refs.todo.value;
+    const todo = this.refs.todo.value
     if(todo.length > 0) {
-      this.refs.todo.value = '';
-      this.props.dispatch(actions.addTodo(todo))
+      this.refs.todo.value = ''
+      this.props.addTodo(todo)
     }
   }
 
@@ -43,8 +44,14 @@ class Todo extends Component {
   }
 }
 
-export default connect(
-  state => {
-    return state;
+function mapStateToProps(state) {
+  return {
+    todos: state.todos
   }
-)(Todo);
+}
+
+function mapDispatchToProps(dispatch) {
+  return bindActionCreators(actions, dispatch)
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Todo)

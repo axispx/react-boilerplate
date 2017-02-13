@@ -1,7 +1,7 @@
-import React, {Component} from 'react';
+import React, {Component} from 'react'
 
-import styles from '../styles/App.scss';
-import logo from '../../assets/ashish.png';
+import styles from '../styles/App.scss'
+import logo from '../../assets/ashish.png'
 
 class App extends Component {
   render() {
@@ -18,10 +18,9 @@ class App extends Component {
           <a href="#" target="_blank">React Router</a>
           <a href="https://webpack.js.org" target="_blank">Webpack 2</a>
         </div>
-
       </div>
     )
   }
 }
 
-export default App;
+export default App
