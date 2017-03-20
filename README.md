@@ -1,11 +1,11 @@
-## What is  ashish-react-boilerplate?
+## What is  react-boilerplate?
 
-`ashish-react-boilerplate`  as the name suggests is a ReactJS boilerplate to create ReactJS apps without having to worry about setting up Webpack.
+`react-boilerplate`  as the name suggests is a ReactJS boilerplate to create ReactJS apps without having to worry about setting up Webpack.
 
 ## Usage
 ###1. Clone the repo
 
-    git clone https://github.com/anarchyrucks/ashish-react-boilerplate.git <project name>
+    git clone https://github.com/anarchyrucks/react-boilerplate.git <project name>
 
 ###2. Install dependencies
 
